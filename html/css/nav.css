@@ -1,0 +1,78 @@
+body{
+    background-color: #d11c5b;
+    background-image: url("photo/photo2.jpg");
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+/* body code end--------------------------------------------------------------- */
+.search{
+    float: right;
+  
+  }
+/* search code end--------------------------------------------------------------- */
+  .main-srarch {
+    padding: 10px 20px;
+    margin: 8px 0;
+    margin-right: 5px;
+    border: 0.5px solid #ccc;
+    border-radius: 7px;
+   
+  }
+/* main search code end--------------------------------------------------------------- */
+  .custom-select{
+    margin-top: 16.3px;
+   
+  }
+  /* custom select code end--------------------------------------------------------------- */
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7fa63f;
+  }
+  /*navigetion bar code end--------------------------------------------------------------- */
+  
+  li {
+    float: left;
+    margin-left: 6px;
+    border-radius: 7px;
+  }
+  /*navigation list code end--------------------------------------------------------------- */
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /*navigation link code end--------------------------------------------------------------- */
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #f9871b;
+  }
+
+    /*navigation link hover code end--------------------------------------------------------------- */
+ button:hover {
+    background-color: #416799; /* Green */
+    color: white;
+  }
+    /*button hover code end--------------------------------------------------------------- */
+  button{
+    background-color: white;
+    border-radius: 7px;
+    padding: 10px 16px;
+    border: 1px solid #dbc21d; /* Green */
+  }
+  input:hover {
+    background-color: #1bdf21; /* Green */
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 213, 0);
+    opacity: 1; /* Firefox */
+  }

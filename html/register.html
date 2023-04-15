@@ -1,0 +1,115 @@
+<!DOCTYPE  html>
+<html>
+<head>
+     <meta charset="utf-8">
+    <title>My first web page</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/nav.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+<body>
+     <nav class="navbar">
+        <ul class="nav-list">
+            <li class="logo">
+             <!---   <img src="photo/logo.jpg" alt="logo">-->
+            </li>
+            <li class="nav-item">
+                <a href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact">Contact</a>
+            </li>
+            <li class="nav-ltem">
+                <a href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a href="#login">Login</a>
+            <li class="nav-item">
+            <div class="custom-select" style="width:200px;">
+                <select>
+                  <option value="0">Service Type</option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Citroen</option>
+                  <option value="4">Ford</option>
+                  <option value="5">Honda</option>
+                  <option value="6">Jaguar</option>
+                  <option value="7">Land Rover</option>
+                  <option value="8">Mercedes</option>
+                  <option value="9">Mini</option>
+                  <option value="10">Nissan</option>
+                  <option value="11">Toyota</option>
+                  <option value="12">Volvo</option>
+                </select>
+              </div>
+            </li>
+        <div class="search">
+            <i class="fa fa-search"></i>
+            <input class="main-srarch" type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </ul>
+    </nav>
+    
+    <nav class="nav-form">
+        <form action="action_page.js" method="get">
+            <div class="container">
+              <h1>Register</h1>
+              <p><b>Please fill in this form to create an account.</b></p>
+              <hr>
+              <label for="name"><b>Name</b></label>
+              <i class="fa-solid fa-user"></i>
+                <input class="form-input" type="text" placeholder="Enter Name" name="name" required><br>
+              <label for="email"><b>Email</b></label>
+              <i class="fa-solid fa-envelope"></i>
+              <input class="form-input" type="text" placeholder="Enter Email" name="email" required><br>
+              <label for="phone"><b>Phone</b></label>
+              <i class="fa-sharp fa-solid fa-phone"></i>
+                <input class="form-input" type="text" placeholder="Enter Phone" name="phone" required><br>
+                <div class="address">
+                <label for="address"><b>Address</b></label>
+                <i class="fa-solid fa-location-dot"></i>
+                <input class="form-input" type="text" placeholder="Enter Address" name="address" required><br>
+                <label for="city"><b>City</b></label>
+                <i class="fa-solid fa-city"></i>
+                <input class="form-input" type="text" placeholder="Enter City" name="city" required><br>
+                <label for="state"><b>State</b></label> 
+                <i class="fa-solid fa-caravan"></i>
+                <input class="form-input" type="text" placeholder="Enter State" name="state" required><br>
+                <label for="zip"><b>Pincode</b></label>
+                <i class="fa-sharp fa-solid fa-location-pin"></i>
+                <input class="form-input" type="text" placeholder="Enter Zip" name="zip" required><br>
+                <label for="country"><b>Country</b></label>
+                <i class="fa-solid fa-globe"></i>
+                <input class="form-input" type="text" placeholder="Enter Country" name="country"><br>
+                </div>
+                <label for="psw"><b>Password</b></label>
+                <i class="fa-solid fa-unlock"></i>
+              <input class="form-input" type="password" placeholder="Enter Password" name="psw" required><br>
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <i class="fa-solid fa-lock"></i>
+              <input class="form-input" type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              <div class="clearfix">
+                <button type="reset" class="cancelbtn">Cancel</button>
+                <button onclick="window.open('https://educative.io/');" target="_blank"> Login </button>
+                <button type="submit" class="signupbtn">Register</button>
+                <button onclick="window.print()">Print this page</button>
+              </div>
+            </div>
+        </form>
+    </nav>
+    <script src="js/register.js"></script>
+</body>
+</html>

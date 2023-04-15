@@ -1,0 +1,28 @@
+/* form ---------------------------------------------------------------------------------------*/
+ .container{  
+        
+    background-color: #0c897b;
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 20px;
+    opacity: 0.8;
+    height: 740px;
+  width: 500px;
+  text-align: center;
+  border: 3px solid green;
+  margin: auto;
+ }
+ /* container code end--------------------------------------------------------------- */
+      .form-input{
+        background: none;
+        width: 270px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border: none;
+        font-weight: bold;
+        margin: 2px 0px;
+        border-bottom: 2px solid rgb(0, 38, 128);
+        
+      }
+      /* form input code end--------------------------------------------------------------- */
+      

@@ -1,0 +1,138 @@
+<!DOCTYPE  html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <script src="js/about.js"></script>
+    <title>My first web page</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+<body>
+     <nav class="navbar">
+        <ul class="nav-list">
+            <li class="logo">
+             <!---   <img src="photo/logo.jpg" alt="logo">-->
+            </li>
+            <li class="nav-item">
+                <a href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact">Contact</a>
+            </li>
+            <li class="nav-ltem">
+                <a href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a href="#login">Login</a>
+            <li class="nav-item">
+            <div class="custom-select" style="width:200px;">
+                <select>
+                  <option value="0">Service Type</option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Citroen</option>
+                  <option value="4">Ford</option>
+                  <option value="5">Honda</option>
+                  <option value="6">Jaguar</option>
+                  <option value="7">Land Rover</option>
+                  <option value="8">Mercedes</option>
+                  <option value="9">Mini</option>
+                  <option value="10">Nissan</option>
+                  <option value="11">Toyota</option>
+                  <option value="12">Volvo</option>
+                </select>
+              </div>
+            </li>
+        <div class="search">
+            <i class="fa fa-search"></i>
+            <input class="main-srarch" type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </ul>
+    </nav>
+    <h1>this is Gallery page</h1>
+    
+<div style="text-align:center">
+    <h2>Tabbed Image Gallery</h2>
+    <p>Click on the images below:</p>
+  </div>
+  
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column">
+      <img src="css/photo/photo1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="css/photo/photo6.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="css/photo/photo2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+    <div class="column">
+      <img src="css/photo/photo3.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="css/photo/photo4.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="css/photo/photo5.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+        <img src="css/photo/photo3.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="css/photo/photo3.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="css/photo/photo5.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+      </div>
+        <div class="column">
+            <img src="css/photo/photo3.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="css/photo/photo5.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="css/photo/photo5.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+              </div>
+              <div class="column">
+                <img src="css/photo/photo5.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+              </div>
+      <div class="column">
+        <img src="css/photo/photo3.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="css/photo/photo3.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="css/photo/photo3.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+      </div>
+  </div>
+  
+  <div class="container">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:100%">
+    <div id="imgtext"></div>
+  </div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+  
+</body>
+</html>
